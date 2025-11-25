@@ -1,4 +1,4 @@
- // Smooth Scrolling مع تعويض navbar
+  // Smooth Scrolling مع تعويض navbar
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const target = document.querySelector(link.getAttribute("href"));
@@ -13,8 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 // Typing Animation
 const text =
-"My name is Ziad Ayman Abdalla Elmaghraby, a passionate Front-End Developer skilled in HTML, CSS, JavaScript, and React. I also have strong experience in C++, Java, Python, and OOP.";
-
+  "my name is Ziad Ayman Abdalla Elmaghraby, a passionate Front-End Developer skilled in HTML, CSS, JavaScript, and React. I also have strong experience in C++, Java, Python, and OOP.I enjoy building clean, responsive, and user-friendly interfaces, and I’m always looking to learn new technologies to improve my work. I have a strong problem-solving mindset and love turning ideas into real, functional projects. I am constantly developing my skills through personal projects, teamwork, and continuous learning.";
 let i = 0;
 const typingText = document.getElementById("typing-text");
 const aboutSection = document.querySelector(".about-container");
