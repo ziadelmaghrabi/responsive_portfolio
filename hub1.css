@@ -12,6 +12,9 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
+.marquee:hover {
+  box-shadow: 0 8px 40px 0 #4fc3f7, 0 6px 24px rgba(0,0,0,0.8);
+}
 
 .marquee mark {
   display: inline-block;
@@ -88,7 +91,7 @@ nav a:hover::after {
   box-shadow: 0 8px 40px 0 #4fc3f7, 0 6px 24px rgba(0,0,0,0.8);
         transition: box-shadow 0.3s;0.8);
 
-  /* تأثير 3D بتاعك */
+   /*3d effect*/
   transform: rotateY(var(--rotateY, 0)) rotateX(var(--rotateX, 0)) scale(1.05);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -253,7 +256,7 @@ mark:hover {
 
 /* ================= CONTACT ================= */
 .contact a {
-  color: #4fc3f7; /* نص أساسي */
+  color: #4fc3f7; 
   text-decoration: none;
   position: center;
  display: inline-block;
@@ -313,4 +316,5 @@ mark:hover {
     font-size: 1.5rem;
   }
 }
+
 
