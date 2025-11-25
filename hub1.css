@@ -250,10 +250,11 @@ mark:hover {
 }
 
 .project p:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(79,195,247,0.5);
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #4db8ff;
 }
-
+   
+ 
 /* ================= CONTACT ================= */
 .contact a {
   color: #4fc3f7; 
@@ -316,5 +317,6 @@ mark:hover {
     font-size: 1.5rem;
   }
 }
+
 
 
