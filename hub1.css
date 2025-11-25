@@ -1,4 +1,4 @@
- /* ================== GLOBAL ================== */
+/* ================== GLOBAL ================== */
 body {
   background: #111;
   color: #eee;
@@ -77,6 +77,7 @@ nav a:hover::after {
   text-align: center;
   margin-top: 40px;
 }
+
 .profile-img {
   border-radius: 50%;
   width: 320px;
@@ -84,7 +85,8 @@ nav a:hover::after {
   object-fit: cover;
 
   /* ظل الصورة الأساسي */
-  box-shadow: 0 6px 24px rgba(0,0,0,0.8);
+  box-shadow: 0 8px 40px 0 #4fc3f7, 0 6px 24px rgba(0,0,0,0.8);
+        transition: box-shadow 0.3s;0.8);
 
   /* تأثير 3D بتاعك */
   transform: rotateY(var(--rotateY, 0)) rotateX(var(--rotateX, 0)) scale(1.05);
@@ -103,9 +105,8 @@ nav a:hover::after {
 
 /* لمعة خفيفة عند المرور */
 .profile-img:hover {
-  box-shadow: 
-    0 0 15px rgba(0, 150, 255, 0.4),
-    0 6px 24px rgba(0,0,0,0.8);
+   box-shadow: 0 8px 40px 0 #4fc3f7, 0 6px 24px rgba(0,0,0,0.8);
+      
 }
 
 /* Responsive */
@@ -115,6 +116,7 @@ nav a:hover::after {
     height: 200px;
   }
 }
+
 
 h1, h2 {
   font-weight: bold;
@@ -249,19 +251,20 @@ mark:hover {
 .contact a {
   color: #4fc3f7; /* نص أساسي */
   text-decoration: none;
-  position: relative;
-  display: inline-block;
+  position: center;
+   display: inline-block;
   padding: 12px 24px;
   border-radius: 6px;
   background-color: transparent; /* شفاف في الوضع العادي */
   font-weight: bold;
   font-size: 1rem;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .contact a:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(79,195,247,0.5);
+   transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 40px 0 #4fc3f7, 0 6px 24px rgba(0,0,0,0.8);
+        
   background-color: #4fc3f7;
   color: #111;
 }
