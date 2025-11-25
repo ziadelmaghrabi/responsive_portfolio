@@ -1,4 +1,4 @@
-  /* ================== GLOBAL ================== */
+ /* ================== GLOBAL ================== */
 body {
   background: #111;
   color: #eee;
@@ -186,6 +186,10 @@ mark:hover {
   object-fit: cover;
   transition: 0.5s;
 }
+.about-img:hover{
+  box-shadow: 0 8px 40px 0 #d01919, 0 6px 24px rgba(0,0,0,0.8);
+      
+}
 
 .about-container:hover .about-img {
   transform: translateX(-40px);
@@ -252,7 +256,7 @@ mark:hover {
   color: #4fc3f7; /* نص أساسي */
   text-decoration: none;
   position: center;
-   display: inline-block;
+ display: inline-block;
   padding: 12px 24px;
   border-radius: 6px;
   background-color: transparent; /* شفاف في الوضع العادي */
@@ -262,6 +266,7 @@ mark:hover {
 }
 
 .contact a:hover {
+  
    transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 40px 0 #4fc3f7, 0 6px 24px rgba(0,0,0,0.8);
         
@@ -308,6 +313,4 @@ mark:hover {
     font-size: 1.5rem;
   }
 }
-
-
 
