@@ -77,15 +77,35 @@ nav a:hover::after {
   text-align: center;
   margin-top: 40px;
 }
-
-..profile-img {
+.profile-img {
   border-radius: 50%;
   width: 320px;
   height: 320px;
   object-fit: cover;
+
+  /* ظل الصورة الأساسي */
   box-shadow: 0 6px 24px rgba(0,0,0,0.8);
+
+  /* تأثير 3D بتاعك */
   transform: rotateY(var(--rotateY, 0)) rotateX(var(--rotateX, 0)) scale(1.05);
-  transition: transform 0.2s, box-shadow 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* تأثير الضوء عند الضغط */
+.profile-img:active {
+  box-shadow: 
+    0 0 25px rgba(0, 150, 255, 1),
+    0 0 50px rgba(0, 150, 255, 0.8),
+    0 0 80px rgba(0, 150, 255, 0.6);
+  transform: rotateY(var(--rotateY, 0)) rotateX(var(--rotateX, 0)) scale(0.97);
+}
+
+/* لمعة خفيفة عند المرور */
+.profile-img:hover {
+  box-shadow: 
+    0 0 15px rgba(0, 150, 255, 0.4),
+    0 6px 24px rgba(0,0,0,0.8);
 }
 
 /* Responsive */
@@ -95,7 +115,6 @@ nav a:hover::after {
     height: 200px;
   }
 }
-
 
 h1, h2 {
   font-weight: bold;
@@ -286,3 +305,4 @@ mark:hover {
     font-size: 1.5rem;
   }
 }
+
